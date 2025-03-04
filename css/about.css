@@ -1,0 +1,48 @@
+header {
+  background: #f4d6fb;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+body {
+  background: #e6e6fa;
+  font-family: 'Courier New', sans-serif;
+}
+
+.worker img {
+  display: block;
+  margin: 0;
+  max-width: 30%;
+  max-height: 30%;
+  width: auto;
+  height: auto;
+}
+.cta {
+  text-align: center;
+}
+
+.cta .btn {
+  display: inline-block;
+  padding: 20px 50px;
+  background: #d63384;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta .btn:hover {
+  background: #c21e6f;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #e6e6fa;
+  border-radius: 8px;
+}
