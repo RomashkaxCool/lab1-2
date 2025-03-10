@@ -1,25 +1,43 @@
 <!DOCTYPE html>
-<html lang="uk" xmlns="http://www.w3.org/1999/html">
+<html lang="uk">
+<link rel="stylesheet" href="css/login.css">
 <head>
   <meta charset="UTF-8">
-  <title>Вікно Логіну</title>
-  <link rel="stylesheet" href="css/login.css">
+  <title>Вхід</title>
 </head>
 <body>
-<div class="login-container">
-  <h2>Вхід</h2>
-  <form action="#" method="POST">
-    <div class="input-group">
-      <label for="username">Користувач</label>
-      <input type="text" id="username" name="username" required>
-    </div>
-    <div class="input-group">
-      <label for="password">Пароль</label>
-      <input type="password" id="password" name="password" required>
-    </div>
+<header>
+  <nav id="header">
+    <ul>
+      <li><a href="index.html">Головна сторінка</a></li>
+      <li><a href="course.html">Про курс</a></li>
+      <li><a href="advices.html">Поради експертів</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container">
+  <section id="login">
+    <h3>Вхід</h3>
+    <label>
+      <input class="input_place" type="text" placeholder="Логін">
+    </label>
+    <label>
+      <input class="input_place" type="password" placeholder="Пароль">
+    </label>
     <h6><a href="register.html">Не маєте акаунта?</a></h6>
-    <button type="submit" class="btn">Увійти</button>
-  </form>
-</div>
+    <div class="cta">
+      <a class="btn" href="index.html">Увійти</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <nav id="footer">
+    <ul>
+      <li><a href="contacts.html">Контакти</a></li>
+      <li><a href="about.html">Про нас</a></li>
+    </ul>
+  </nav>
+</footer>
 </body>
 </html>

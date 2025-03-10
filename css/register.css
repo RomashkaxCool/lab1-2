@@ -4,51 +4,69 @@ header {
   text-align: center;
   border-radius: 8px;
 }
-
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+  font-size: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #d63384;
+}
 body {
-  background: #e6e6fa;
-  font-family: 'Courier New', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   margin: 0;
+  display: flex;
   flex-direction: column;
+  background: #e6e6fa;
+  font-size: 30px;
+  font-family: 'Courier New', sans-serif;
 }
-
+main{
+  flex: 1;
+}
 .container {
   width: 100%;
-  max-width: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  background: white;
+  box-sizing: border-box;
+  background-color: #e6e6fa;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cta {
   text-align: center;
 }
-
-.register-container h2 {
-  margin-bottom: 20px;
-}
-
-.input-group {
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-.input-group label {
-  display: block;
-  margin-bottom: 5px;
+.cta .btn {
+  display: inline-block;
+  padding: 20px 50px;
+  background: #d63384;
+  color: white;
+  font-size: 18px;
   font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
 }
-
-.input-group input {
-  width: 100%;
-  padding: 8px;
+.input_place {
+  background: #dedefd;
+  width: 30%;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
-
 h6 {
   margin: 10px 0;
 }
@@ -62,21 +80,57 @@ h6 a {
 h6 a:hover {
   color: #c21e6f;
 }
-
-.btn {
-  display: inline-block;
-  width: 100%;
-  padding: 10px;
-  background: #d63384;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.btn:hover {
+.cta .btn:hover {
   background: #c21e6f;
+}
+footer {
+  background: #f4d6fb;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+#footer {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .cta .btn {
+    padding: 15px 40px;
+    font-size: 16px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
+  .input_place {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav ul li {
+    font-size: 22px;
+  }
+
+  body {
+    font-size: 24px;
+  }
+
+  .cta .btn {
+    padding: 18px 45px;
+    font-size: 17px;
+  }
+
+  .input_place {
+    font-size: 19px;
+  }
 }

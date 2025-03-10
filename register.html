@@ -1,33 +1,52 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
+<link rel="stylesheet" href="css/register.css">
 <head>
   <meta charset="UTF-8">
   <title>Реєстрація</title>
-  <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
-
-<div class="container">
-  <div class="register-container">
-    <h2>Створення акаунта</h2>
-    <form action="#" method="POST">
-
-      <div class="input-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="input-group">
-        <label for="password">Пароль</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <div class="input-group">
-        <label for="confirm_password">Підтвердьте пароль</label>
-        <input type="password" id="confirm_password" name="confirm_password" required>
-      </div>
-      <h6><a href="login.html">Вже маєте акаунт?</a></h6>
-      <button type="submit" class="btn">Зареєструватися</button>
-    </form>
-  </div>
-</div>
+<header>
+  <nav id="header">
+    <ul>
+      <li><a href="index.html">Головна сторінка</a></li>
+      <li><a href="course.html">Про курс</a></li>
+      <li><a href="advices.html">Поради експертів</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container">
+  <section id="registration">
+    <h3>Реєстрація</h3>
+    <label>
+      <input class="input_place" type="text" placeholder="Ім'я">
+    </label>
+    <label>
+      <input class="input_place" type="text" placeholder="Прізвище">
+    </label>
+    <label>
+      <input class="input_place" type="email" placeholder="Email">
+    </label>
+    <label>
+      <input class="input_place" type="password" placeholder="Пароль">
+    </label>
+    <label>
+      <input class="input_place" type="password" placeholder="Підтвердження паролю">
+    </label>
+    <h6><a href="login.html">Вже маєте акаунт?</a></h6>
+    <div class="cta">
+      <a class="btn" href="index.html">Зареєструватися</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <nav id="footer">
+    <ul>
+      <li><a href="contacts.html">Контакти</a></li>
+      <li><a href="about.html">Про нас</a></li>
+    </ul>
+  </nav>
+</footer>
 </body>
 </html>
