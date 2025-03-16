@@ -69,6 +69,14 @@ main{
 .cta .btn:hover {
   background: #c21e6f;
 }
+img{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+img:hover {
+  transform: scale(1.1);
+}
 footer{
   background: #f4d6fb;
   padding: 15px 0;
@@ -98,6 +106,9 @@ footer{
   body {
     font-size: 20px;
   }
+  .input_message, .input_place {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -112,5 +123,8 @@ footer{
   .cta .btn {
     padding: 18px 45px;
     font-size: 17px;
+  }
+  .input_message, .input_place {
+    font-size: 19px;
   }
 }
