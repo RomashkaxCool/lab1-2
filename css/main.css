@@ -89,7 +89,7 @@ img:hover {
 .burger {
   font-size: 30px;
   cursor: pointer;
-  display: none;  /* Кнопка відображається */
+  display: none;
   color: #333;
   background: none;
   border: none;
@@ -103,7 +103,7 @@ img:hover {
   width: 100%;
   height: 5px;
   background-color: #333;
-  transition: all 0.3s ease; /* Додаємо анімацію */
+  transition: all 0.3s ease;
   position: absolute;
 }
 
@@ -126,30 +126,28 @@ img:hover {
 }
 
 .burger.active .middle {
-  opacity: 0; /* Приховує середню лінію */
+  opacity: 0;
 }
 
 .burger.active .bottom {
   transform: rotate(-45deg);
   bottom: 50%;
 }
-/* Стилі для мобільного меню */
 .mobile-menu {
-  display: none;  /* Спочатку меню не відображається */
+  display: none;
   flex-direction: column;
   position: fixed;
   top: 0;
   right: 0;
-  width: 45%;  /* Змінюємо ширину меню на 50% */
+  width: 45%;
   height: 100%;
   background: #f4d6fb;
   text-align: center;
-  padding-top: 20px;  /* Додаємо відступ згори для вирівнювання */
+  padding-top: 20px;
   box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
   z-index: 999;
 }
 
-/* Вирівнювання елементів по центру верха */
 .mobile-menu ul {
   list-style: none;
   padding: 0;
@@ -157,11 +155,10 @@ img:hover {
 }
 
 .mobile-menu ul li {
-  margin: 20px 0;  /* Відстань між елементами */
+  margin: 20px 0;
   font-size: 22px;
 }
 
-/* Встановлення стилю для посилань */
 .mobile-menu ul li a {
   text-decoration: none;
   color: #333;
@@ -173,7 +170,6 @@ img:hover {
   color: #d63384;
 }
 
-/* Активація меню при натисканні на бургер */
 .mobile-menu.active {
   display: flex;
 }
@@ -189,7 +185,6 @@ footer{
   text-align: center;
 }
 @media (max-width: 767px) {
-  /* Приховуємо звичайну навігацію */
   nav {
     display: none;
   }
@@ -199,21 +194,19 @@ footer{
   footer {
     display: none;
   }
-  /* Відображаємо бургер */
   .burger {
-    display: block;  /* Відображення кнопки бургера */
+    display: block;
   }
 
-  /* Відображення посилань у стовпчик при активному меню */
   .mobile-menu ul {
     display: flex;
-    flex-direction: column;  /* Встановлюємо елементи в стовпчик */
-    align-items: center;  /* Центруємо посилання по горизонталі */
-    justify-content: flex-start;  /* Встановлюємо елементи на верх */
-    height: 100%;  /* Займаємо всю висоту екрану */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
   }
 
   .mobile-menu ul li {
-    margin: 15px 0;  /* Відстань між посиланнями */
+    margin: 15px 0;
   }
 }
